@@ -1,0 +1,71 @@
+/* web.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #2a4d69;
+    margin-bottom: 16px;
+}
+
+/* Links */
+a {
+    color: #1976d2;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.button:hover {
+    background: #0d47a1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 12px;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
