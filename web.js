@@ -1,14 +1,13 @@
-const http = require('http');
+// Simple client-side form handler
 
-const hostname = '127.0.0.1';
-const port = 3000;
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello, World!\n');
-});
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        formMessage.textContent = 'Thank you for contacting us!';
+        formMessage.style.color = 'green';
+        form.reset();
+    });
 });
